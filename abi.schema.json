@@ -13,9 +13,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ElementaryTypeName"
-          ]
+          "enum": ["ElementaryTypeName"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -27,13 +25,7 @@
           "$ref": "#/definitions/TypeDescriptions"
         }
       },
-      "required": [
-        "id",
-        "name",
-        "nodeType",
-        "src",
-        "typeDescriptions"
-      ],
+      "required": ["id", "name", "nodeType", "src", "typeDescriptions"],
       "title": "ElementaryTypeName"
     },
     "TypeDescriptions": {
@@ -41,20 +33,13 @@
       "additionalProperties": false,
       "properties": {
         "typeIdentifier": {
-          "anyOf": [
-            { "type": "string" },
-            { "type": "null" }
-          ]
+          "anyOf": [{ "type": "string" }, { "type": "null" }]
         },
         "typeString": {
-          "anyOf": [
-            { "type": "string" },
-            { "type": "null" }
-          ]
+          "anyOf": [{ "type": "string" }, { "type": "null" }]
         }
       },
-      "required": [
-      ],
+      "required": [],
       "title": "TypeDescriptions"
     },
     "Expression": {
@@ -109,17 +94,11 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "Assignment"
-          ]
+          "enum": ["Assignment"]
         },
         "operator": {
           "type": "string",
-          "enum": [
-            "=",
-            "+=",
-            "/="
-          ]
+          "enum": ["=", "+=", "/="]
         },
         "rightHandSide": {
           "$ref": "#/definitions/Expression"
@@ -184,9 +163,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "BinaryOperation"
-          ]
+          "enum": ["BinaryOperation"]
         },
         "operator": {
           "type": "string",
@@ -274,9 +251,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "Conditional"
-          ]
+          "enum": ["Conditional"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -335,9 +310,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ElementaryTypeNameExpression"
-          ]
+          "enum": ["ElementaryTypeNameExpression"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -400,9 +373,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "IndexAccess"
-          ]
+          "enum": ["IndexAccess"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -462,11 +433,7 @@
         },
         "kind": {
           "type": "string",
-          "enum": [
-            "functionCall",
-            "typeConversion",
-            "structConstructorCall"
-          ]
+          "enum": ["functionCall", "typeConversion", "structConstructorCall"]
         },
         "lValueRequested": {
           "type": "boolean"
@@ -479,9 +446,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "FunctionCall"
-          ]
+          "enum": ["FunctionCall"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -551,9 +516,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "FunctionCallOptions"
-          ]
+          "enum": ["FunctionCallOptions"]
         },
         "options": {
           "type": "array",
@@ -615,20 +578,14 @@
         },
         "kind": {
           "type": "string",
-          "enum": [
-            "bool",
-            "number",
-            "string"
-          ]
+          "enum": ["bool", "number", "string"]
         },
         "lValueRequested": {
           "type": "boolean"
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "Literal"
-          ]
+          "enum": ["Literal"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -640,10 +597,7 @@
           "$ref": "#/definitions/TypeDescriptions"
         },
         "value": {
-          "anyOf": [
-            { "type": "null" },
-            { "type": "string" }
-          ]
+          "anyOf": [{ "type": "null" }, { "type": "string" }]
         }
       },
       "required": [
@@ -698,15 +652,10 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "MemberAccess"
-          ]
+          "enum": ["MemberAccess"]
         },
         "referencedDeclaration": {
-          "anyOf": [
-            { "type": "null" },
-            { "type": "integer" }
-          ]
+          "anyOf": [{ "type": "null" }, { "type": "integer" }]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -760,9 +709,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "NewExpression"
-          ]
+          "enum": ["NewExpression"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -827,9 +774,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "TupleExpression"
-          ]
+          "enum": ["TupleExpression"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -884,19 +829,11 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "UnaryOperation"
-          ]
+          "enum": ["UnaryOperation"]
         },
         "operator": {
           "type": "string",
-          "enum": [
-            "++",
-            "--",
-            "-",
-            "!",
-            "delete"
-          ]
+          "enum": ["++", "--", "-", "!", "delete"]
         },
         "prefix": {
           "type": "boolean"
@@ -935,9 +872,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "FunctionTypeName"
-          ]
+          "enum": ["FunctionTypeName"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -975,16 +910,10 @@
       "additionalProperties": false,
       "properties": {
         "body": {
-          "anyOf": [
-            { "$ref": "#/definitions/Block" },
-            { "$ref": "#/definitions/Statement" }
-          ]
+          "anyOf": [{ "$ref": "#/definitions/Block" }, { "$ref": "#/definitions/Statement" }]
         },
         "condition": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/Expression" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/Expression" }]
         },
         "id": {
           "type": "integer"
@@ -997,27 +926,17 @@
           ]
         },
         "loopExpression": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/ExpressionStatement" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/ExpressionStatement" }]
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ForStatement"
-          ]
+          "enum": ["ForStatement"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "body",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["body", "id", "nodeType", "src"],
       "title": "ForStatement"
     },
     "IfStatement": {
@@ -1039,27 +958,16 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "IfStatement"
-          ]
+          "enum": ["IfStatement"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         },
         "trueBody": {
-          "anyOf": [
-            { "$ref": "#/definitions/Block" },
-            { "$ref": "#/definitions/Statement" }
-          ]
+          "anyOf": [{ "$ref": "#/definitions/Block" }, { "$ref": "#/definitions/Statement" }]
         }
       },
-      "required": [
-        "condition",
-        "id",
-        "nodeType",
-        "src",
-        "trueBody"
-      ],
+      "required": ["condition", "id", "nodeType", "src", "trueBody"],
       "title": "IfStatement"
     },
     "EmitStatement": {
@@ -1074,20 +982,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "EmitStatement"
-          ]
+          "enum": ["EmitStatement"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "eventCall",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["eventCall", "id", "nodeType", "src"],
       "title": "EmitStatement"
     },
     "ExpressionStatement": {
@@ -1102,20 +1003,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ExpressionStatement"
-          ]
+          "enum": ["ExpressionStatement"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "expression",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["expression", "id", "nodeType", "src"],
       "title": "ExpressionStatement"
     },
     "VariableDeclarationStatement": {
@@ -1125,19 +1019,13 @@
         "assignments": {
           "type": "array",
           "items": {
-            "anyOf": [
-              { "type": "null" },
-              { "type": "integer" }
-            ]
+            "anyOf": [{ "type": "null" }, { "type": "integer" }]
           }
         },
         "declarations": {
           "type": "array",
           "items": {
-            "anyOf": [
-              { "type": "null" },
-              { "$ref": "#/definitions/VariableDeclaration" }
-            ]
+            "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/VariableDeclaration" }]
           }
         },
         "id": {
@@ -1155,21 +1043,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "VariableDeclarationStatement"
-          ]
+          "enum": ["VariableDeclarationStatement"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "assignments",
-        "declarations",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["assignments", "declarations", "id", "nodeType", "src"],
       "title": "VariableDeclarationStatement"
     },
     "WhileStatement": {
@@ -1177,10 +1057,7 @@
       "additionalProperties": false,
       "properties": {
         "body": {
-          "anyOf": [
-            { "$ref": "#/definitions/Block" },
-            { "$ref": "#/definitions/Statement" }
-          ]
+          "anyOf": [{ "$ref": "#/definitions/Block" }, { "$ref": "#/definitions/Statement" }]
         },
         "condition": {
           "$ref": "#/definitions/Expression"
@@ -1190,21 +1067,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "WhileStatement"
-          ]
+          "enum": ["WhileStatement"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "body",
-        "condition",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["body", "condition", "id", "nodeType", "src"],
       "title": "WhileStatement"
     },
     "PlaceholderStatement": {
@@ -1216,19 +1085,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "PlaceholderStatement"
-          ]
+          "enum": ["PlaceholderStatement"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["id", "nodeType", "src"],
       "title": "PlaceholderStatement"
     },
     "TryStatement": {
@@ -1249,21 +1112,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "TryStatement"
-          ]
+          "enum": ["TryStatement"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "clauses",
-        "externalCall",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["clauses", "externalCall", "id", "nodeType", "src"],
       "title": "TryStatement"
     },
     "TryCatchClause": {
@@ -1281,27 +1136,16 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "TryCatchClause"
-          ]
+          "enum": ["TryCatchClause"]
         },
         "parameters": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/ParameterList" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/ParameterList" }]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "block",
-        "errorName",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["block", "errorName", "id", "nodeType", "src"],
       "title": "TryCatchClause"
     },
     "UserDefinedTypeName": {
@@ -1319,9 +1163,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "UserDefinedTypeName"
-          ]
+          "enum": ["UserDefinedTypeName"]
         },
         "referencedDeclaration": {
           "type": "integer"
@@ -1333,14 +1175,7 @@
           "$ref": "#/definitions/TypeDescriptions"
         }
       },
-      "required": [
-        "id",
-        "name",
-        "nodeType",
-        "referencedDeclaration",
-        "src",
-        "typeDescriptions"
-      ],
+      "required": ["id", "name", "nodeType", "referencedDeclaration", "src", "typeDescriptions"],
       "title": "UserDefinedTypeName"
     },
     "InheritanceSpecifier": {
@@ -1368,20 +1203,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "InheritanceSpecifier"
-          ]
+          "enum": ["InheritanceSpecifier"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "baseName",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["baseName", "id", "nodeType", "src"],
       "title": "InheritanceSpecifier"
     },
     "ModifierInvocation": {
@@ -1409,20 +1237,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ModifierInvocation"
-          ]
+          "enum": ["ModifierInvocation"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "id",
-        "modifierName",
-        "nodeType",
-        "src"
-      ],
+      "required": ["id", "modifierName", "nodeType", "src"],
       "title": "ModifierInvocation"
     },
     "Identifier": {
@@ -1448,19 +1269,14 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "Identifier"
-          ]
+          "enum": ["Identifier"]
         },
         "overloadedDeclarations": {
           "type": "array",
           "items": {}
         },
         "referencedDeclaration": {
-          "anyOf": [
-            { "type": "null" },
-            { "type": "integer" }
-          ]
+          "anyOf": [{ "type": "null" }, { "type": "integer" }]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -1469,14 +1285,7 @@
           "$ref": "#/definitions/TypeDescriptions"
         }
       },
-      "required": [
-        "id",
-        "name",
-        "nodeType",
-        "overloadedDeclarations",
-        "src",
-        "typeDescriptions"
-      ],
+      "required": ["id", "name", "nodeType", "overloadedDeclarations", "src", "typeDescriptions"],
       "title": "Identifier"
     },
     "Block": {
@@ -1488,9 +1297,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "Block"
-          ]
+          "enum": ["Block"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -1502,12 +1309,7 @@
           }
         }
       },
-      "required": [
-        "id",
-        "nodeType",
-        "src",
-        "statements"
-      ],
+      "required": ["id", "nodeType", "src", "statements"],
       "title": "Block"
     },
     "Statement": {
@@ -1533,9 +1335,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "OverrideSpecifier"
-          ]
+          "enum": ["OverrideSpecifier"]
         },
         "overrides": {
           "type": "array",
@@ -1547,12 +1347,7 @@
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "id",
-        "nodeType",
-        "overrides",
-        "src"
-      ],
+      "required": ["id", "nodeType", "overrides", "src"],
       "title": "OverrideSpecifier"
     },
     "EnumValue": {
@@ -1567,20 +1362,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "EnumValue"
-          ]
+          "enum": ["EnumValue"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "id",
-        "name",
-        "nodeType",
-        "src"
-      ],
+      "required": ["id", "name", "nodeType", "src"],
       "title": "EnumValue"
     },
     "EnumDefinition": {
@@ -1604,22 +1392,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "EnumDefinition"
-          ]
+          "enum": ["EnumDefinition"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "canonicalName",
-        "id",
-        "members",
-        "name",
-        "nodeType",
-        "src"
-      ],
+      "required": ["canonicalName", "id", "members", "name", "nodeType", "src"],
       "title": "EnumDefinition"
     },
     "EventDefinition": {
@@ -1630,10 +1409,7 @@
           "type": "boolean"
         },
         "documentation": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/StructuredDocumentation" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/StructuredDocumentation" }]
         },
         "id": {
           "type": "integer"
@@ -1643,9 +1419,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "EventDefinition"
-          ]
+          "enum": ["EventDefinition"]
         },
         "parameters": {
           "$ref": "#/definitions/ParameterList"
@@ -1654,14 +1428,7 @@
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "anonymous",
-        "id",
-        "name",
-        "nodeType",
-        "parameters",
-        "src"
-      ],
+      "required": ["anonymous", "id", "name", "nodeType", "parameters", "src"],
       "title": "EventDefinition"
     },
     "FunctionDefinition": {
@@ -1675,16 +1442,10 @@
           }
         },
         "body": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/Block" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/Block" }]
         },
         "documentation": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/StructuredDocumentation" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/StructuredDocumentation" }]
         },
         "functionSelector": {
           "type": "string"
@@ -1697,13 +1458,7 @@
         },
         "kind": {
           "type": "string",
-          "enum": [
-            "function",
-            "receive",
-            "constructor",
-            "fallback",
-            "freeFunction"
-          ]
+          "enum": ["function", "receive", "constructor", "fallback", "freeFunction"]
         },
         "modifiers": {
           "type": "array",
@@ -1716,9 +1471,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "FunctionDefinition"
-          ]
+          "enum": ["FunctionDefinition"]
         },
         "overrides": {
           "anyOf": [
@@ -1778,9 +1531,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ParameterList"
-          ]
+          "enum": ["ParameterList"]
         },
         "parameters": {
           "type": "array",
@@ -1792,12 +1543,7 @@
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "id",
-        "nodeType",
-        "parameters",
-        "src"
-      ],
+      "required": ["id", "nodeType", "parameters", "src"],
       "title": "ParameterList"
     },
     "ArrayTypeName": {
@@ -1811,16 +1557,11 @@
           "type": "integer"
         },
         "length": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/Expression" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/Expression" }]
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ArrayTypeName"
-          ]
+          "enum": ["ArrayTypeName"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -1829,13 +1570,7 @@
           "$ref": "#/definitions/TypeDescriptions"
         }
       },
-      "required": [
-        "baseType",
-        "id",
-        "nodeType",
-        "src",
-        "typeDescriptions"
-      ],
+      "required": ["baseType", "id", "nodeType", "src", "typeDescriptions"],
       "title": "ArrayTypeName"
     },
     "Mapping": {
@@ -1850,9 +1585,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "Mapping"
-          ]
+          "enum": ["Mapping"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -1864,14 +1597,7 @@
           "$ref": "#/definitions/TypeName"
         }
       },
-      "required": [
-        "id",
-        "keyType",
-        "nodeType",
-        "src",
-        "typeDescriptions",
-        "valueType"
-      ],
+      "required": ["id", "keyType", "nodeType", "src", "typeDescriptions", "valueType"],
       "title": "Mapping"
     },
     "ModifierDefinition": {
@@ -1882,10 +1608,7 @@
           "$ref": "#/definitions/Block"
         },
         "documentation": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/StructuredDocumentation" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/StructuredDocumentation" }]
         },
         "id": {
           "type": "integer"
@@ -1895,9 +1618,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ModifierDefinition"
-          ]
+          "enum": ["ModifierDefinition"]
         },
         "overrides": {
           "type": "null"
@@ -1915,16 +1636,7 @@
           "$ref": "#/definitions/Visibility"
         }
       },
-      "required": [
-        "body",
-        "id",
-        "name",
-        "nodeType",
-        "parameters",
-        "src",
-        "virtual",
-        "visibility"
-      ],
+      "required": ["body", "id", "name", "nodeType", "parameters", "src", "virtual", "visibility"],
       "title": "ModifierDefinition"
     },
     "InlineAssembly": {
@@ -1969,13 +1681,7 @@
                 "type": "integer"
               }
             },
-            "required": [
-              "declaration",
-              "isOffset",
-              "isSlot",
-              "src",
-              "valueSize"
-            ]
+            "required": ["declaration", "isOffset", "isSlot", "src", "valueSize"]
           }
         },
         "id": {
@@ -1983,22 +1689,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "InlineAssembly"
-          ]
+          "enum": ["InlineAssembly"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "AST",
-        "evmVersion",
-        "externalReferences",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["AST", "evmVersion", "externalReferences", "id", "nodeType", "src"],
       "title": "InlineAssembly"
     },
     "ImportDirective": {
@@ -2016,9 +1713,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ImportDirective"
-          ]
+          "enum": ["ImportDirective"]
         },
         "scope": {
           "type": "integer"
@@ -2039,15 +1734,10 @@
                 "$ref": "#/definitions/Identifier"
               },
               "local": {
-                "anyOf": [
-                  { "type": "null" },
-                  { "type": "string" }
-                ]
+                "anyOf": [{ "type": "null" }, { "type": "string" }]
               }
             },
-            "required": [
-              "foreign"
-            ]
+            "required": ["foreign"]
           }
         },
         "unitAlias": {
@@ -2076,9 +1766,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "PragmaDirective"
-          ]
+          "enum": ["PragmaDirective"]
         },
         "literals": {
           "type": "array",
@@ -2090,12 +1778,7 @@
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "id",
-        "nodeType",
-        "literals",
-        "src"
-      ],
+      "required": ["id", "nodeType", "literals", "src"],
       "title": "PragmaDirective"
     },
     "ContractDefinition": {
@@ -2119,17 +1802,10 @@
         },
         "contractKind": {
           "type": "string",
-          "enum": [
-            "contract",
-            "interface",
-            "library"
-          ]
+          "enum": ["contract", "interface", "library"]
         },
         "documentation": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/StructuredDocumentation" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/StructuredDocumentation" }]
         },
         "fullyImplemented": {
           "type": "boolean"
@@ -2148,9 +1824,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "ContractDefinition"
-          ]
+          "enum": ["ContractDefinition"]
         },
         "nodes": {
           "type": "array",
@@ -2194,10 +1868,7 @@
       "additionalProperties": false,
       "properties": {
         "expression": {
-          "anyOf": [
-            { "$ref": "#/definitions/Expression" },
-            { "type": "null" }
-          ]
+          "anyOf": [{ "$ref": "#/definitions/Expression" }, { "type": "null" }]
         },
         "functionReturnParameters": {
           "type": "integer"
@@ -2207,21 +1878,13 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "Return"
-          ]
+          "enum": ["Return"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
         }
       },
-      "required": [
-        "expression",
-        "functionReturnParameters",
-        "id",
-        "nodeType",
-        "src"
-      ],
+      "required": ["expression", "functionReturnParameters", "id", "nodeType", "src"],
       "title": "Return"
     },
     "StructDefinition": {
@@ -2245,9 +1908,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "StructDefinition"
-          ]
+          "enum": ["StructDefinition"]
         },
         "scope": {
           "type": "integer"
@@ -2283,9 +1944,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "UsingForDirective"
-          ]
+          "enum": ["UsingForDirective"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -2294,13 +1953,7 @@
           "$ref": "#/definitions/TypeName"
         }
       },
-      "required": [
-        "id",
-        "libraryName",
-        "nodeType",
-        "src",
-        "typeName"
-      ],
+      "required": ["id", "libraryName", "nodeType", "src", "typeName"],
       "title": "UsingForDirective"
     },
     "VariableDeclaration": {
@@ -2311,10 +1964,7 @@
           "type": "boolean"
         },
         "documentation": {
-          "anyOf": [
-            { "type": "null" },
-            { "$ref": "#/definitions/StructuredDocumentation" }
-          ]
+          "anyOf": [{ "type": "null" }, { "$ref": "#/definitions/StructuredDocumentation" }]
         },
         "functionSelector": {
           "type": "string"
@@ -2333,9 +1983,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "VariableDeclaration"
-          ]
+          "enum": ["VariableDeclaration"]
         },
         "overrides": {
           "type": "null"
@@ -2356,10 +2004,7 @@
           "$ref": "#/definitions/TypeDescriptions"
         },
         "typeName": {
-          "anyOf": [
-            { "$ref": "#/definitions/TypeName" },
-            { "type": "null" }
-          ]
+          "anyOf": [{ "$ref": "#/definitions/TypeName" }, { "type": "null" }]
         },
         "value": {
           "anyOf": [
@@ -2399,9 +2044,7 @@
         },
         "nodeType": {
           "type": "string",
-          "enum": [
-            "StructuredDocumentation"
-          ]
+          "enum": ["StructuredDocumentation"]
         },
         "src": {
           "$ref": "#/definitions/SourceLocation"
@@ -2410,12 +2053,7 @@
           "type": "string"
         }
       },
-      "required": [
-        "id",
-        "nodeType",
-        "src",
-        "text"
-      ],
+      "required": ["id", "nodeType", "src", "text"],
       "title": "StructuredDocumentation"
     },
     "TypeName": {
@@ -2429,21 +2067,12 @@
     },
     "StateMutability": {
       "type": "string",
-      "enum": [
-        "payable",
-        "pure",
-        "nonpayable",
-        "view"
-      ],
+      "enum": ["payable", "pure", "nonpayable", "view"],
       "title": "StateMutability"
     },
     "Mutability": {
       "type": "string",
-      "enum": [
-        "mutable",
-        "immutable",
-        "constant"
-      ],
+      "enum": ["mutable", "immutable", "constant"],
       "title": "Mutability"
     },
     "SourceLocation": {
@@ -2453,22 +2082,12 @@
     },
     "StorageLocation": {
       "type": "string",
-      "enum": [
-        "calldata",
-        "default",
-        "memory",
-        "storage"
-      ],
+      "enum": ["calldata", "default", "memory", "storage"],
       "title": "StorageLocation"
     },
     "Visibility": {
       "type": "string",
-      "enum": [
-        "external",
-        "public",
-        "internal",
-        "private"
-      ],
+      "enum": ["external", "public", "internal", "private"],
       "title": "Visibility"
     }
   },
@@ -2503,9 +2122,7 @@
     },
     "nodeType": {
       "type": "string",
-      "enum": [
-        "SourceUnit"
-      ]
+      "enum": ["SourceUnit"]
     },
     "nodes": {
       "type": "array",
@@ -2525,13 +2142,6 @@
       "$ref": "#/definitions/SourceLocation"
     }
   },
-  "required": [
-    "absolutePath",
-    "exportedSymbols",
-    "id",
-    "nodeType",
-    "nodes",
-    "src"
-  ],
+  "required": ["absolutePath", "exportedSymbols", "id", "nodeType", "nodes", "src"],
   "title": "SourceUnit"
 }

@@ -1,0 +1,32 @@
+{
+  "name": "ethereum-schemas",
+  "version": "0.0.1",
+  "description": "json schemas used in the ethereum ecosystem",
+  "files": [
+    "*.json"
+  ],
+  "directories": {
+    "test": "tests",
+    "src": "src"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambacha/ethereum-schemas.git"
+  },
+  "keywords": [
+    "ethereum",
+    "schemas",
+    "json",
+    "schemas",
+    "types"
+  ],
+  "author": "sam bacha <sam@freighttrust.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sambacha/ethereum-schemas/issues"
+  },
+  "homepage": "https://github.com/sambacha/ethereum-schemas#readme"
+}

@@ -1,4 +1,4 @@
- {
+{
   "$id": "contract-object.spec.json",
   "$schema": "http://json-schema.org/schema#",
   "title": "Contract Object",
@@ -92,9 +92,7 @@
       "$ref": "#/definitions/GeneratedSources"
     }
   },
-  "required": [
-    "abi"
-  ],
+  "required": ["abi"],
   "patternProperties": {
     "^x-": {
       "anyOf": [
@@ -139,21 +137,21 @@
       "type": "object",
       "patternProperties": {
         "[1-9][0-9]*": {
-         "type": "array",
-         "items": {
-           "type": "object",
-           "properties": {
-             "start": {
-               "type": "integer",
-               "minimum": 0
-             },
-             "length": {
-               "type": "integer",
-               "minimum": 0
-             }
-           },
-           "additionalProperties": false
-         }
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "length": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          }
         }
       },
       "additionalProperties": false
@@ -163,11 +161,11 @@
       "items": {
         "type": "object",
         "properties": {
-          "id": {"type": "integer", "minimum": 0},
-          "language": {"type": "string"},
-          "name": {"type": "string"},
-          "contents": {"type": "string"},
-          "ast": {"type": "object"}
+          "id": { "type": "integer", "minimum": 0 },
+          "language": { "type": "string" },
+          "name": { "type": "string" },
+          "contents": { "type": "string" },
+          "ast": { "type": "object" }
         },
         "additionalProperties": false
       }

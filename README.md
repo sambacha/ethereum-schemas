@@ -1,13 +1,13 @@
 # [ethereum-schemas](#)
 
-> json schemas 
+> json schemas
 
-## Overview 
+## Overview
 
 ```bash
 // TODO
 ```
 
-## License 
+## License
 
 SPDX-License-Identifier: Apache-2.0

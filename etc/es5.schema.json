@@ -78,9 +78,7 @@
         }
       }
     },
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "Function": {
     "kind": "interface",
@@ -110,16 +108,12 @@
         "name": "BlockStatement"
       }
     },
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "Statement": {
     "kind": "interface",
     "props": {},
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "EmptyStatement": {
     "kind": "interface",
@@ -129,9 +123,7 @@
         "value": "EmptyStatement"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "BlockStatement": {
     "kind": "interface",
@@ -148,9 +140,7 @@
         }
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "ExpressionStatement": {
     "kind": "interface",
@@ -164,9 +154,7 @@
         "name": "Expression"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "IfStatement": {
     "kind": "interface",
@@ -197,9 +185,7 @@
         ]
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "LabeledStatement": {
     "kind": "interface",
@@ -217,9 +203,7 @@
         "name": "Statement"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "BreakStatement": {
     "kind": "interface",
@@ -242,9 +226,7 @@
         ]
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "ContinueStatement": {
     "kind": "interface",
@@ -267,9 +249,7 @@
         ]
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "WithStatement": {
     "kind": "interface",
@@ -287,9 +267,7 @@
         "name": "Statement"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "SwitchStatement": {
     "kind": "interface",
@@ -314,9 +292,7 @@
         "value": false
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "ReturnStatement": {
     "kind": "interface",
@@ -339,9 +315,7 @@
         ]
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "ThrowStatement": {
     "kind": "interface",
@@ -355,9 +329,7 @@
         "name": "Expression"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "TryStatement": {
     "kind": "interface",
@@ -397,9 +369,7 @@
         ]
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "WhileStatement": {
     "kind": "interface",
@@ -417,9 +387,7 @@
         "name": "Statement"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "DoWhileStatement": {
     "kind": "interface",
@@ -437,9 +405,7 @@
         "name": "Expression"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "ForStatement": {
     "kind": "interface",
@@ -496,9 +462,7 @@
         "name": "Statement"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "ForInStatement": {
     "kind": "interface",
@@ -529,9 +493,7 @@
         "name": "Statement"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "DebuggerStatement": {
     "kind": "interface",
@@ -541,16 +503,12 @@
         "value": "DebuggerStatement"
       }
     },
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "Declaration": {
     "kind": "interface",
     "props": {},
-    "base": [
-      "Statement"
-    ]
+    "base": ["Statement"]
   },
   "FunctionDeclaration": {
     "kind": "interface",
@@ -564,10 +522,7 @@
         "name": "Identifier"
       }
     },
-    "base": [
-      "Function",
-      "Declaration"
-    ]
+    "base": ["Function", "Declaration"]
   },
   "VariableDeclaration": {
     "kind": "interface",
@@ -588,9 +543,7 @@
         "value": "var"
       }
     },
-    "base": [
-      "Declaration"
-    ]
+    "base": ["Declaration"]
   },
   "VariableDeclarator": {
     "kind": "interface",
@@ -617,16 +570,12 @@
         ]
       }
     },
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "Expression": {
     "kind": "interface",
     "props": {},
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "ThisExpression": {
     "kind": "interface",
@@ -636,9 +585,7 @@
         "value": "ThisExpression"
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "ArrayExpression": {
     "kind": "interface",
@@ -664,9 +611,7 @@
         }
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "ObjectExpression": {
     "kind": "interface",
@@ -683,9 +628,7 @@
         }
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "Property": {
     "kind": "interface",
@@ -729,9 +672,7 @@
         ]
       }
     },
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "FunctionExpression": {
     "kind": "interface",
@@ -741,10 +682,7 @@
         "value": "FunctionExpression"
       }
     },
-    "base": [
-      "Function",
-      "Expression"
-    ]
+    "base": ["Function", "Expression"]
   },
   "SequenceExpression": {
     "kind": "interface",
@@ -761,9 +699,7 @@
         }
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "UnaryExpression": {
     "kind": "interface",
@@ -785,9 +721,7 @@
         "name": "Expression"
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "BinaryExpression": {
     "kind": "interface",
@@ -809,9 +743,7 @@
         "name": "Expression"
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "AssignmentExpression": {
     "kind": "interface",
@@ -842,9 +774,7 @@
         "name": "Expression"
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "UpdateExpression": {
     "kind": "interface",
@@ -866,9 +796,7 @@
         "name": "boolean"
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "LogicalExpression": {
     "kind": "interface",
@@ -890,9 +818,7 @@
         "name": "Expression"
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "ConditionalExpression": {
     "kind": "interface",
@@ -914,9 +840,7 @@
         "name": "Expression"
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "CallExpression": {
     "kind": "interface",
@@ -937,9 +861,7 @@
         }
       }
     },
-    "base": [
-      "Expression"
-    ]
+    "base": ["Expression"]
   },
   "NewExpression": {
     "kind": "interface",
@@ -949,9 +871,7 @@
         "value": "NewExpression"
       }
     },
-    "base": [
-      "CallExpression"
-    ]
+    "base": ["CallExpression"]
   },
   "MemberExpression": {
     "kind": "interface",
@@ -973,17 +893,12 @@
         "name": "boolean"
       }
     },
-    "base": [
-      "Expression",
-      "Pattern"
-    ]
+    "base": ["Expression", "Pattern"]
   },
   "Pattern": {
     "kind": "interface",
     "props": {},
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "SwitchCase": {
     "kind": "interface",
@@ -1013,9 +928,7 @@
         }
       }
     },
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "CatchClause": {
     "kind": "interface",
@@ -1037,9 +950,7 @@
         "name": "BlockStatement"
       }
     },
-    "base": [
-      "Node"
-    ]
+    "base": ["Node"]
   },
   "Identifier": {
     "kind": "interface",
@@ -1053,11 +964,7 @@
         "name": "string"
       }
     },
-    "base": [
-      "Node",
-      "Expression",
-      "Pattern"
-    ]
+    "base": ["Node", "Expression", "Pattern"]
   },
   "Literal": {
     "kind": "interface",
@@ -1092,10 +999,7 @@
         ]
       }
     },
-    "base": [
-      "Node",
-      "Expression"
-    ]
+    "base": ["Node", "Expression"]
   },
   "RegexLiteral": {
     "kind": "interface",
@@ -1114,21 +1018,11 @@
         }
       }
     },
-    "base": [
-      "Literal"
-    ]
+    "base": ["Literal"]
   },
   "UnaryOperator": {
     "kind": "enum",
-    "values": [
-      "-",
-      "+",
-      "!",
-      "~",
-      "typeof",
-      "void",
-      "delete"
-    ]
+    "values": ["-", "+", "!", "~", "typeof", "void", "delete"]
   },
   "BinaryOperator": {
     "kind": "enum",
@@ -1158,33 +1052,14 @@
   },
   "LogicalOperator": {
     "kind": "enum",
-    "values": [
-      "||",
-      "&&"
-    ]
+    "values": ["||", "&&"]
   },
   "AssignmentOperator": {
     "kind": "enum",
-    "values": [
-      "=",
-      "+=",
-      "-=",
-      "*=",
-      "/=",
-      "%=",
-      "<<=",
-      ">>=",
-      ">>>=",
-      "|=",
-      "^=",
-      "&="
-    ]
+    "values": ["=", "+=", "-=", "*=", "/=", "%=", "<<=", ">>=", ">>>=", "|=", "^=", "&="]
   },
   "UpdateOperator": {
     "kind": "enum",
-    "values": [
-      "++",
-      "--"
-    ]
+    "values": ["++", "--"]
   }
 }
