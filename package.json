@@ -1,6 +1,6 @@
 {
   "name": "ethereum-schemas",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "json schemas used in the ethereum ecosystem",
   "files": [
     "*.json"
